@@ -29,7 +29,7 @@ function move(obj,json,options) {
 	}
 	clearInterval(obj.timer);
 	var n = 0;
-	var count = Math.round(options.duration/700);
+	var count = Math.round(options.duration/30);
 	obj.timer = setInterval(function() {
 		n++;
 		for(var name in json) {
